@@ -15,7 +15,7 @@ depended_servers=()
 # 依存サーバ起動確認用URL
 # サーバ側にTomcatが起動していればステータスコード200を返すものを用意しておく
 # http://$depended_servers[n]:$depended_servers_check_port/$depended_servers_check_url のように組み立てられる
-depended_servers_check_url=hogehoge/hhogeoh
+depended_servers_check_url=
 depended_servers_check_port=8080
 
 # 依存サーバ起動確認のインターバル
