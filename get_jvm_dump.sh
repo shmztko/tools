@@ -14,11 +14,6 @@ then
 fi
 echo "Java Process ID -> $java_proc_id"
 
-# ヒープダンプを出力
-echo "Java heap dump start."
-jmap -dump:format=b,file=jmap-$now.bin $java_proc_id
-echo "Java heap dump finish. -> $current_dir/jmap-$now.bin created."
-
 # スレッドダンプを出力
 echo "Java thread dump start."
 jstack $java_proc_id > jstack-$now.log
